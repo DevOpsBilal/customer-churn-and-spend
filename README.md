@@ -84,7 +84,7 @@ One accuracy figure flattens that completely, which is why the matrix is here an
 
 ---
 
-## The bit worth reading
+## One split vs five
 
 One split said **80.6%**. Five-fold cross-validation said **70.2%**.
 
