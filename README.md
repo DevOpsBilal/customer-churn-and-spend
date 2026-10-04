@@ -27,7 +27,7 @@ Two questions come out of that, and they need different models:
 | How much will they spend? | `monthly_spend` | Linear Regression |
 | Will they renew? | `renewed_subscription` | Logistic Regression |
 
-One is a number, the other is a yes or no. That difference decides everything downstream.
+One is a number, the other is a yes or no, and that single difference is what picks the model, the metric and the way you check it.
 
 ---
 
@@ -102,7 +102,7 @@ The spread tells you as much as the average does. This feature set isn't produci
 
 `customer_engagement_practice.csv`. 180 rows, 8 columns, nothing missing, 96 who left and 84 who stayed.
 
-It's synthetic, supplied for teaching, and it's small. That's the direct cause of the fold variance above, and it's why nothing here is a claim about real customers. The method is the point.
+It's synthetic, supplied for teaching, and small, which is exactly why the folds disagree with each other so much. Nothing here is a claim about real customers, only about how you'd go about it.
 
 ---
 
@@ -133,10 +133,10 @@ fig_*.png                            the figures
 
 ---
 
-## Closing note
+## What I'd say about it
 
 The modelling is four imports, a split, `.fit()` and `.predict()`. You could type it in two minutes.
 
-Everything that actually changed the outcome happened around it: deciding which columns were allowed to be clues, working out what the metric was really measuring, and not believing the first number that came back.
+Everything that actually changed the outcome happened around it. Which columns were allowed to be clues. What the metric was really measuring, as opposed to what it looked like it was measuring. And whether the first number that came back deserved to be believed.
 
 Built during Artificial Intelligence (M40651), BSc Computer Science, University of Portsmouth London.
